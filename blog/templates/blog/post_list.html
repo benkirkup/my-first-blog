@@ -5,8 +5,18 @@
     <title>Posts</title>
 </head>
 <body>
-<h1>Hello World</h1>
-<h2>Cheese</h2>
-<h3>Crackers</h3>
+    <div>
+
+        <h1>The Blog</h1>
+
+    </div>
+
+    <div>
+    {% for post in posts %}
+        <p>Published: {{ post.published_date }}</p>
+        <h2><a href=""> {{ post.title }} </a></h2>
+        <p>{{ post.abstract|linebreaks }}</p>
+    {% endfor %}
+    </div>
 </body>
 </html>
