@@ -18,6 +18,11 @@ h1 {
     font-family: 'Lobster'
 }
 
+h2 {
+    color: grey;
+    text-transform: capitalize;
+}
+
 h2 a {
     color: grey;
     text-transform: capitalize;
@@ -56,4 +61,11 @@ h2 a {
 
 .post h1 a, .post h1 a:visited {
     color: #000000;
+}
+
+.published_post {
+       color: #828282;
+    font-size: 9.5;
+    line-height: 0.5;
+    float: right;
 }
